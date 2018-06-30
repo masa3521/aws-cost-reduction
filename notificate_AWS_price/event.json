@@ -1,6 +1,4 @@
 {
  "slackPostURL": "https://hooks.slack.com/services/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",
- "slackChannel": "#test",
- "token": "FxfMJOlXxNHNKUXn2jiT4cbx",
- "trigger_word": "7dtd start"
+ "slackChannel": "#test"
 }
