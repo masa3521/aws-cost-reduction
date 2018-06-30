@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="060e1a0e-aca3-4a06-b9f8-a7ae18fccdba" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificate-aws-price2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificate-aws-price2/handler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificate-aws-price2/lambda_function.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificate-aws-price2/serverless.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/event.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/lambda.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/lambda_function.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/python-lambda-local.sh" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +16,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/norify-aws-price/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -45,6 +37,7 @@
         <option value="$PROJECT_DIR$/notificate_AWS_price/lambda_function.py" />
         <option value="$PROJECT_DIR$/notificate-aws-price2/lambda_function.py" />
         <option value="$PROJECT_DIR$/notificate-aws-price2/serverless.yml" />
+        <option value="$PROJECT_DIR$/norify-aws-price/.gitignore" />
       </list>
     </option>
   </component>
@@ -78,12 +71,6 @@
               <item name="aws-cost-reduction" type="b2602c69:ProjectViewProjectNode" />
               <item name="aws-cost-reduction" type="462c0819:PsiDirectoryNode" />
               <item name="norify-aws-price" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-cost-reduction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-cost-reduction" type="462c0819:PsiDirectoryNode" />
-              <item name="norify-aws-price" type="462c0819:PsiDirectoryNode" />
-              <item name=".serverless" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,8 +276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/norify-aws-price/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
