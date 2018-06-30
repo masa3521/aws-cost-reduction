@@ -12,7 +12,10 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 #logger.setLevel(logging.DEBUG)
 
-# Slack の設定
+# Slack の設定i
+# Slack の設定i
+# Slack の設定i
+# Slack の設定i
 
 SLACK_POST_URL = os.environ["slackPostURL"]
 #SLACK_POST_URL = "https://hooks.slack.com/services/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"

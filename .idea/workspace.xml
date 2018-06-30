@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="060e1a0e-aca3-4a06-b9f8-a7ae18fccdba" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/event.json" beforeDir="false" afterPath="$PROJECT_DIR$/notificate_AWS_price/event.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/lambda_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/notificate_AWS_price/lambda_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificate-aws-price2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificate-aws-price2/handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificate-aws-price2/lambda_function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificate-aws-price2/serverless.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/event.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/lambda.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/lambda_function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificate_AWS_price/python-lambda-local.sh" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +20,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/norify-aws-price/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,6 +43,7 @@
         <option value="$PROJECT_DIR$/notificate_AWS_price/lambda_function2.py" />
         <option value="$PROJECT_DIR$/notificate_AWS_price/aaa.py" />
         <option value="$PROJECT_DIR$/notificate_AWS_price/lambda_function.py" />
+        <option value="$PROJECT_DIR$/notificate-aws-price2/lambda_function.py" />
         <option value="$PROJECT_DIR$/notificate-aws-price2/serverless.yml" />
       </list>
     </option>
@@ -59,12 +77,13 @@
             <path>
               <item name="aws-cost-reduction" type="b2602c69:ProjectViewProjectNode" />
               <item name="aws-cost-reduction" type="462c0819:PsiDirectoryNode" />
-              <item name="notificate-aws-price2" type="462c0819:PsiDirectoryNode" />
+              <item name="norify-aws-price" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aws-cost-reduction" type="b2602c69:ProjectViewProjectNode" />
               <item name="aws-cost-reduction" type="462c0819:PsiDirectoryNode" />
-              <item name="notificate_AWS_price" type="462c0819:PsiDirectoryNode" />
+              <item name="norify-aws-price" type="462c0819:PsiDirectoryNode" />
+              <item name=".serverless" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -117,12 +136,12 @@
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32935324" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50159746" side_tool="true" weight="0.27064678" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32935324" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32935324" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27064678" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946752" weight="0.32935324" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49893504" weight="0.32935324" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49840257" visible="true" weight="0.27064678" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29818955" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -204,43 +223,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notificate_AWS_price/aaa.py" />
-    <entry file="file://$PROJECT_DIR$/notificate_AWS_price/event.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notificate_AWS_price/python-lambda-local.sh">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notificate_AWS_price/lambda_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="e#41#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notificate_aws_price2/lambda_function.py" />
     <entry file="file://$PROJECT_DIR$/notificate_aws_price2/handler.py" />
     <entry file="file://$PROJECT_DIR$/notificate_aws_price2/serverless.yml" />
-    <entry file="file://$PROJECT_DIR$/notificate-aws-price2/serverless.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notificate-aws-price2/handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notificate-aws-price2/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -252,6 +240,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notificate_AWS_price/lambda_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notificate_AWS_price/lambda.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notificate_AWS_price/event.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notificate-aws-price2/lambda_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notificate-aws-price2/handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notificate-aws-price2/serverless.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/norify-aws-price/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
