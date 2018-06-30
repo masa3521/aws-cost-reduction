@@ -18,7 +18,7 @@ var/
 
 # Serverless directories
 .serverless
-.node_module
+.node_module/
 
 # IntelliJ directories
 ../.idea
