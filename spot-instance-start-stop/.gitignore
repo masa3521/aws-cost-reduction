@@ -18,9 +18,11 @@ var/
 
 # Serverless directories
 .serverless
+.node_module/
 
 # event.json
 event.json
 
 # IntelliJ directories
 .idea/
+
