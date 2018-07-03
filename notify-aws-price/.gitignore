@@ -21,5 +21,4 @@ var/
 .node_module/
 
 # IntelliJ directories
-../.idea
-
+.idea/

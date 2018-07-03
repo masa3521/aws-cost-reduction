@@ -1,0 +1,83 @@
+service: spot-instance-start-stop
+provider:
+  name: aws
+  runtime: python3.6
+  region: ap-northeast-1
+  stage: dev
+  environment:
+    table_name: "spot_instance_list"
+  iamRoleStatements:
+    - "Effect": Allow
+      "Action":
+        - "events:*"
+        - "s3:*"
+        - "cloudwatch:*"
+        - "dynamodb:*"
+        - "ec2:DescribeImages"
+        - "ec2:DescribeSubnets"
+        - "ec2:RequestSpotInstances"
+        - "ec2:TerminateInstances"
+        - "ec2:DescribeInstanceStatus"
+        - "iam:PassRole"
+      "Resource": "*"
+
+plugins:
+ - serverless-dynamodb-local
+ - serverless-offline
+
+# Lambda function
+functions:
+   start:
+    name: spot-instance-start
+    handler: start.lambda_handler
+    memorySize: 256 # optional, in MB, default is 1024
+    timeout: 30 # optional, in seconds, default is 6
+    events:
+      - http:
+          path: start
+          method: post
+   stop:
+    name: spot-instance-stop
+    handler: stop.lambda_handler
+    memorySize: 256 # optional, in MB, default is 1024
+    timeout: 30 # optional, in seconds, default is 6
+    events:
+      - http:
+          path: stop
+          method: post
+
+# local infomation
+custom:
+  dynamodb:
+    start:
+      port: 8000
+      inMemory: true
+      migrate: true
+      seed: true
+    seed:
+      development:
+        sources:
+          - table: spot_instance_list
+            sources: [./migrations/spot_instance_list.json]
+
+# dyanmo-db
+resources:
+  Resources:
+    JankensTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: spot_instance_list
+        AttributeDefinitions:
+          - AttributeName: Id
+            AttributeType: S
+#          - AttributeName: unixtime
+#            AttributeType: N
+        KeySchema:
+          - AttributeName: Id
+            KeyType: HASH
+#          - AttributeName: unixtime
+#            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+

@@ -7,6 +7,13 @@ provider:
   environment:
     slackPostURL: "https://hooks.slack.com/services/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"
     slackChannel: "#general"
+  iamRoleStatements:
+    - "Effect": Allow
+      "Action":
+        - "events:*"
+        - "dynamodb:*"
+        - "cloudwatch:*"
+      "Resource": "*"
 
 plugins:
   - serverless-python-requirements
@@ -17,12 +24,13 @@ custom:
     dockerizePip: false
 
 functions:
-  lambda_handler:
+  notify-aws-price-lambda:
     name: notify-aws-price-lambda
     handler: lambda_function.lambda_handler
     memorySize: 256 # optional, in MB, default is 1024
     timeout: 30 # optional, in seconds, default is 6
     events:
       - schedule:
-          rate: cron(0 15 ? * * *)
+          rate: cron(0 15 * * ? *)  #毎日24時に実行
+          #rate: cron(0/5 * * * ? *)  #10分ごとに実行
           enabled: true

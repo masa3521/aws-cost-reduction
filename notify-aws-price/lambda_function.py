@@ -10,25 +10,20 @@ import os
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-#logger.setLevel(logging.DEBUG)
 
 # Slack の設定
 
 SLACK_POST_URL = os.environ["slackPostURL"]
-#SLACK_POST_URL = "https://hooks.slack.com/services/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"
-#SLACK_CHANNEL = "#test"
-SLACK_CHANNEL = os.environ["slackChannel" ]
+SLACK_CHANNEL = os.environ["slackChannel"]
 POST_TEXT = ""
 POST_FIELDS = {
             "fields":[
-                    #{"title": "","value": "","short": "false"}
                 ]
             }
 
 def calculate_billing(line):
     for item in line:
         response = boto3.client('cloudwatch', region_name='us-east-1')
-
         get_metric_statistics = response.get_metric_statistics(
             Namespace='AWS/Billing',
             MetricName='EstimatedCharges',
@@ -48,7 +43,6 @@ def calculate_billing(line):
         Statistics=['Maximum'])
 
         cost = get_metric_statistics['Datapoints'][0]['Maximum']
-        date = get_metric_statistics['Datapoints'][0]['Timestamp'].strftime('%Y年%m月%d日')
         fields = {
                 "title": item,
                 "value": cost,
@@ -56,22 +50,19 @@ def calculate_billing(line):
         }
         POST_FIELDS["fields"].append(fields)
 
-    print(POST_FIELDS["fields"])
     return POST_FIELDS["fields"]
 
 def lambda_handler(event, context):
-    line = ["AWSDataTransfer","AWSConfig","AmazonS3","AmazonEC2","AWSLambda"]
-    #line = ["AmazonEC2", "AmazonRDS", "AmazonRoute53", "AmazonS3", "AmazonSNS", "AWSDataTransfer", "AWSLambda", "AWSQueueService"]
+    #line = ["AmazonApiGateway","AmazonCloudWatch","AmazonDynamoDB","AmazonEC2","AmazonECR","AmazonS3","AmazonSNS","AWSCloudTrail","AWSConfig","AWSDataTransfer","AWSIoT","awskms","AWSLambda","AWSMarketplace","AWSQueueService"]
+    line = ["AmazonApiGateway","AmazonCloudWatch","AmazonDynamoDB","AmazonEC2","AmazonECR","AmazonS3","AmazonSNS","AWSCloudTrail","AWSConfig","AWSDataTransfer","awskms","AWSLambda","AWSMarketplace","AWSQueueService"]
 
     res = calculate_billing(line)
-    print(res)
-    POST_TEXT2 = {"title": "AWS料金は....", "color": "good", "fields" : res}
-    print(POST_TEXT2)
+    post_data = {"title": "AWS料金は....", "color": "good", "fields" : res}
 
     # SlackにPOSTする内容をセット
     slack_message = {
         'channel': SLACK_CHANNEL,
-        "attachments": [POST_TEXT2],
+        "attachments": [post_data],
     }
     print(slack_message)
 
